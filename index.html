@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,115 +10,406 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
 
         body{
-            
+            padding-left: 15px;
             font-family: 'Roboto Mono', monospace;
         }
 
         section{
             /* border: 1px solid black; */
         }
+        .box{
+            transition-duration: 350ms;
+            margin-bottom: 10px;
+        }
+        .box:hover{
+            background-color:#89acff ;
+            padding-left:10px;
+            color: white;
+            margin-bottom: 10px;
+            
+        }
+
+        .mdm:hover{
+            background-color:#9BCDD2 ;
+            padding-left:10px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .red-flag.box:hover{
+            background-color:#db423d ;
+            padding-left:10px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        h1{
+            margin-bottom: 15px;
+        }
+
+        p,a{
+            font-size: 15px;
+        }
     </style>
 </head>
 <body>
-    <h1>Links</h1>
+    <h1>LINKS</h1>
     <details>
          <summary>RESOLVE/ MDM LINKS</summary>
          <section>
-            <h3>Internal Admin</h3>
-            <a href="https://adminsvc.commerce.expertcity.com/userSearch.htm?code=eyJraWQiOiI2MjAiLCJhbGciOiJSUzUxMiJ9.eyJzYyI6ImNvbGxhYjoiLCJzdWIiOiI2OTk0ODg0NDg3Nzk1MjMxMjI2IiwiYXVkIjoiMTllMzA4MDYtODAzZi00YTA2LWE4YjktZmFmM2IzMDQ1ODQzIiwib2duIjoic2FtbCIsImxzIjoiZTJjOWI5YzAtNmEyYy00YmY2LWJjYjYtOTNiYjgwYzgxYjhhIiwidHlwIjoiYyIsImV4cCI6MTY4ODM5MTE1MCwiaWF0IjoxNjg4MzkwNTUwLCJ1cmkiOiJodHRwczpcL1wvYWRtaW5zdmMuY29tbWVyY2UuZXhwZXJ0Y2l0eS5jb21cL3VzZXJTZWFyY2guaHRtIiwianRpIjoiNTM4M2JhZTctZjNjZC00OGYzLWE1MWUtMDVhY2Y4NTU0ZTU3In0.dKZO0lwYeQ8KVkoP9zpGuru6iGn9Fr8szNa3oPxq86MO11mgUJrEkDaqsU3fF1kWMDVRpq5UfPW2FVXH1b2uIQIRp17vfJdl_hOOLK3BtYrIb5kctC5jSNLYk4ZqCPdLBEIQwjOzyYuSi0UruK_FhFKcB1g-fWG6cykm34TI11ommBqjTvsZqa3kCid2wnrI5Edy8yhscclAiF2iXqV_q20CFwTYsaVWSkymy1u6xBKhj9vC1H959LYQH1Q22kRuJyolzM6J1r7SyIANs778bZ01F9xNQJLIZ6LzOWvRc4dfeTcZJ1bel4SOwn2YWYq2fSkrhsN_7bUJv09f1I9vIg" target="_blank" rel="none">IA ADMIN</a>
-            <h3>Internal Console</h3>
-            <a href="https://admin.goto.com/574631585648955939/products" target="_blank">RESOLVE CONSOLE</a>
-            <h3>MAPO</h3>
-            <a href="https://onlinemanagement.miradore.com/" target="_blank">MAPO</a>
-            <h3>Miradores legacy page</h3>
-            <a href="https://www.miradore.com/" target="_blank">MDM</a>
-            <h3>miradore on resolve</h3>
-            <a href="https://574631585648955939.mdm.gotoresolve.com/SetupGuide" target="_blank">MDM on Resolve</a>
-            <h3>MDM Escalation process</h3>
-            <a href="https://lmi.lightning.force.com/lightning/r/Knowledge__kav/kaG4P000000TPPDUA4/view" target="_blank">Escalation Salesforce</a>
+            <div class="box">
+                <p><strong>BOUNCE FILTER</strong></p>
+                <a href=" https://iam.servers.getgo.com/careapp/" target="_blank">Bounce Filter Tool</a>
+            </div>
+            <div class="box">
+                <p><strong>INTERNAL ADMIN</strong></p>
+                <a href="https://adminsvc.commerce.expertcity.com/transactionSearch.htm" target="_blank" rel="none">INTERNAL ADMIN</a>
+             </div>
+             <div class="box">
+                <p><strong>INTERNAL RESOLVE CONSOLE</strong></p>
+                <a href="https://admin.goto.com/574631585648955939/products" target="_blank">RESOLVE CONSOLE</a>
+            </div>
+            <div class="box mdm">
+                <p><strong>MDM MAPO</strong></p>
+                <a href="https://onlinemanagement.miradore.com/" target="_blank">MIRADORE MAPO</a>
+            </div>
+            <div class="box mdm">
+                <p><strong>MIRADORE LEGACY PAGE</strong></p>
+                <a href="https://www.miradore.com/" target="_blank">MDM LEGACY PAGE</a>
+            </div>
+            <div class="box mdm">
+                <p><strong>MIRADORE ON RESOLVE</strong></p>
+                <a  href="https://574631585648955939.mdm.gotoresolve.com/SetupGuide" target="_blank">MDM ON RESOLVE</a>
+            </div>
+            <div class="box red-flag">
+                <p><strong>MIRADORE INTERNAL ESCALATION PROCESS</strong></p>
+                <a href="https://lmi.lightning.force.com/lightning/r/Knowledge__kav/kaG4P000000TPPDUA4/view" target="_blank">MDM ESCALATION PROCESS</a>
+            </div>
         </section>
     </details>
     <hr>
+    <br>
     <details>
         <summary>LMI RESCUE</summary>
         <section>
-             <h3>Rescue Site</h3>
-             <a href="https://secure.logmeinrescue.com/account/login" target="_blank">Rescue Site</a>
-             <h3>BACKOFFICE</h3>
-             <a href="https://backoffice.logmein.com/Portal.aspx" target="_blank">BACKOFFICE</a>
-             <h3>EU BACKOFFICE</h3>
-             <a href="http://backoffice-eu.logmein.com/Portal.aspx" target="_blank">EU BACKOFFICE</a>
-             <h3>DOWNLOAD CENTER</h3>
-             <a href="https://support.logmeinrescue.com/rescue/help/rescue-downloads" target="_blank">DOWNLOAD CENTER</a>
+            <div class="box">
+                <p><strong>RESCUE SITE</strong></p>
+                <a href="https://secure.logmeinrescue.com/account/login" target="_blank">Rescue Site</a>
+            </div>
+            <div class="box">
+                <p><strong>BACKOFFICE</strong></p>
+                <a href="https://backoffice.logmein.com/Portal.aspx" target="_blank"> US BACKOFFICE</a>
+            </div>
+            <div class="box">
+                <p><strong>EU BACKOFFICE</strong></p>
+                <a href="http://backoffice-eu.logmein.com/Portal.aspx" target="_blank">EU BACKOFFICE</a>
+            </div>
+            <div class="box">
+                <p><strong>RESCUE DOWNLOAD CENTER</strong></p>
+                <a href="https://support.logmeinrescue.com/rescue/help/rescue-downloads" target="_blank">DOWNLOAD CENTER</a>
+            </div>
+            <div class="box">
+                <p><strong>RESCUE SUPPORT SITE</strong></p>
+                <a href="https://support.logmeinrescue.com/rescue" target="_blank">SUPPORT SITE</a>
+            </div>
+            <div class="box">
+                <p><strong>RESCUE STATUS SITE</strong></p>
+                <a href="https://status.logmeinremotesupport.com/" target="_blank">STATUS SITE</a>
+            </div>
         </section>
     </details>
     <hr>
+    <br>
     <details>
         <summary>G2A CORPORATE</summary>
          <section>
-            <h3>INTERNAL ADMIN G2A CORPORATE</h3>
-            <a href="https://broker.gotoassist.com/admin/companySearch.tmpl?Action=return" target="_blank">INTERNAL ADMIN</a>
-            <h3>G2A MANAGEMENT PORTAL</h3>
-            <a href="https://broker.gotoassist.com/manager/emailValidationPrompt.tmpl?Action=rgoto&_sf=1&_hl=0" target="_blank">MANAGENER SITE</a>
-            <h3>GOTO SUPPORT PAGE</h3>
-            <a href="https://help.gotoassist.com/" target="_blank">G2A SUPPORT SITE</a>
-            <h3>HELP ALERT DOWNLOADS</h3>
-            <a href="https://broker.gotoassist.com/admin/downloads.tmpl" target="_blank">HELP ALERT DOWNLOAD</a>
+            <div class="box">
+                <p><strong>INTERNAL ADMIN G2A CORPORATE</strong></p>
+                <a href="https://broker.gotoassist.com/admin/companySearch.tmpl?Action=return" target="_blank">INTERNAL ADMIN</a>
+            </div>
+            <div class="box">
+                <p><strong>G2A MANAGEMENT PORTAL</strong></p>
+                <a href="https://broker.gotoassist.com/manager/emailValidationPrompt.tmpl?Action=rgoto&_sf=1&_hl=0" target="_blank">MANAGENER SITE</a>
+            </div>
+            <div class="box">
+                <p><strong>GOTO CORPORATE SUPPORT SITE</strong></p>
+                <a href="https://support.logmeininc.com/gotoassist-corporate" target="_blank">G2A  CORP SUPPORT SITE</a>
+            </div>
+            <div class="box">
+                <p><strong>HELP ALERT DOWNLOADS</strong></p>
+                <a href="https://broker.gotoassist.com/admin/downloads.tmpl" target="_blank">HELP ALERT DOWNLOAD</a>
+            </div>
         </section>
     </details>
     <hr>
+    <br>
     <details>
         <summary>G2A REMOTE SUPPORT V4</summary>
         <section>
-            <h3>G2A ADMIN CENTER</h3>
-            <a href="https://admin.logmeininc.com/portal/#accounts/3792882253621659654/users?filterType=usertype" target="_blank">G2A ADMIN CENTER</a>
-            <h3>G2A V4 WEBSISE</h3>
-            <a href="https://up.gotoassist.com/#/3792882253621659654" target="_blank">G2A WEBSITE</a>
-            <h3>Customer support Page</h3>
-            <a href="https://fastsupport.gotoassist.com/" target="_blank">G2A Customer Support Site</a>
-            <h3>UNATTENDED DOWNLOAD SITE</h3>
-            <a href="https://fastsupport.com/unattended" target="_blank">UA SITE DOWNLOAD</a>
-            <h3>Internal Admin</h3>
-            <a href="https://adminsvc.commerce.expertcity.com/userSearch.htm?code=eyJraWQiOiI2MjAiLCJhbGciOiJSUzUxMiJ9.eyJzYyI6ImNvbGxhYjoiLCJzdWIiOiI2OTk0ODg0NDg3Nzk1MjMxMjI2IiwiYXVkIjoiMTllMzA4MDYtODAzZi00YTA2LWE4YjktZmFmM2IzMDQ1ODQzIiwib2duIjoic2FtbCIsImxzIjoiZTJjOWI5YzAtNmEyYy00YmY2LWJjYjYtOTNiYjgwYzgxYjhhIiwidHlwIjoiYyIsImV4cCI6MTY4ODM5MTE1MCwiaWF0IjoxNjg4MzkwNTUwLCJ1cmkiOiJodHRwczpcL1wvYWRtaW5zdmMuY29tbWVyY2UuZXhwZXJ0Y2l0eS5jb21cL3VzZXJTZWFyY2guaHRtIiwianRpIjoiNTM4M2JhZTctZjNjZC00OGYzLWE1MWUtMDVhY2Y4NTU0ZTU3In0.dKZO0lwYeQ8KVkoP9zpGuru6iGn9Fr8szNa3oPxq86MO11mgUJrEkDaqsU3fF1kWMDVRpq5UfPW2FVXH1b2uIQIRp17vfJdl_hOOLK3BtYrIb5kctC5jSNLYk4ZqCPdLBEIQwjOzyYuSi0UruK_FhFKcB1g-fWG6cykm34TI11ommBqjTvsZqa3kCid2wnrI5Edy8yhscclAiF2iXqV_q20CFwTYsaVWSkymy1u6xBKhj9vC1H959LYQH1Q22kRuJyolzM6J1r7SyIANs778bZ01F9xNQJLIZ6LzOWvRc4dfeTcZJ1bel4SOwn2YWYq2fSkrhsN_7bUJv09f1I9vIg" target="_blank" rel="none">IA ADMIN</a>
-            <h3>GOTO SUPPORT PAGE</h3>
-            <a href="https://help.gotoassist.com/" target="_blank">G2A SUPPORT SITE</a>
+            <div class="box">
+                <p><strong>G2A ADMIN CENTER</strong></p>
+                <a href="https://admin.logmeininc.com/portal/#accounts/3792882253621659654/users?filterType=usertype" target="_blank">G2A ADMIN CENTER</a>
+            </div>
+            <div class="box">
+                <p><strong>G2A V4 WEB CONSOLE</strong></p>
+                <a href="https://up.gotoassist.com/#/3792882253621659654" target="_blank">G2A WEB CONSOLE</a>
+            </div>
+            <div class="box">
+                <p><strong>G2A V4  CUSTOMER GET SUPPORT PAGE</strong></p>
+                <a href="https://fastsupport.gotoassist.com/" target="_blank">G2A Customer Support Site</a>
+            </div>
+            <div class="box">
+                <p><strong>UNATTENDED DOWNLOAD SITE</strong></p>
+                <a href="https://fastsupport.com/unattended" target="_blank">UA SITE DOWNLOAD</a>
+            </div>
+            <div class="box">
+                <p><strong>INTERNAL ADMIN</strong></p>
+                <a href="https://adminsvc.commerce.expertcity.com/transactionSearch.htm" target="_blank" rel="none">INTERNAL ADMIN</a>
+             </div>
+             <div class="box">
+                <p><strong>G2A V4 SUPPORT PAGE</strong></p>
+                <a href="https://help.gotoassist.com/remote-support/products" target="_blank">G2A SUPPORT SITE</a>
+             </div>
+             <div class="box">
+                <p><strong>G2A V4 STATUS SITE</strong></p>
+                <a href=" https://status.logmeinremotesupport.com/" target="_blank">G2A STAtUS  SITE</a>
+             </div>
       </section>
     </details>
     <hr>
+    <br>
     <details>
          <summary>G2A REMOTE SUPPORT V5</summary>
         <section>
-            <h3>ADMIN CENTER</h3>
-            <a href="admin.logmeininc.com" target="_blank">ADMIN CENTER</a>
-            <h3>WEB CONSOLE V5</h3>
-            <a href="https://console.gotoassist.com/" target="_blank">WEB CONSOLE</a>
-            <h3>WEB SUPPORT CUSTOMER SITE</h3>
-            <a href="https://fastsupport.gotoassist.com/" target="_blank">FAST SUPPORT</a>
-            <h3>INTERNAL ADMIN</h3>
-            <a href="https://adminsvc.commerce.expertcity.com/userSearch.htm?code=eyJraWQiOiI2MjAiLCJhbGciOiJSUzUxMiJ9.eyJzYyI6ImNvbGxhYjoiLCJzdWIiOiI2OTk0ODg0NDg3Nzk1MjMxMjI2IiwiYXVkIjoiMTllMzA4MDYtODAzZi00YTA2LWE4YjktZmFmM2IzMDQ1ODQzIiwib2duIjoic2FtbCIsImxzIjoiZTJjOWI5YzAtNmEyYy00YmY2LWJjYjYtOTNiYjgwYzgxYjhhIiwidHlwIjoiYyIsImV4cCI6MTY4ODM5MTE1MCwiaWF0IjoxNjg4MzkwNTUwLCJ1cmkiOiJodHRwczpcL1wvYWRtaW5zdmMuY29tbWVyY2UuZXhwZXJ0Y2l0eS5jb21cL3VzZXJTZWFyY2guaHRtIiwianRpIjoiNTM4M2JhZTctZjNjZC00OGYzLWE1MWUtMDVhY2Y4NTU0ZTU3In0.dKZO0lwYeQ8KVkoP9zpGuru6iGn9Fr8szNa3oPxq86MO11mgUJrEkDaqsU3fF1kWMDVRpq5UfPW2FVXH1b2uIQIRp17vfJdl_hOOLK3BtYrIb5kctC5jSNLYk4ZqCPdLBEIQwjOzyYuSi0UruK_FhFKcB1g-fWG6cykm34TI11ommBqjTvsZqa3kCid2wnrI5Edy8yhscclAiF2iXqV_q20CFwTYsaVWSkymy1u6xBKhj9vC1H959LYQH1Q22kRuJyolzM6J1r7SyIANs778bZ01F9xNQJLIZ6LzOWvRc4dfeTcZJ1bel4SOwn2YWYq2fSkrhsN_7bUJv09f1I9vIg" target="_blank" rel="none">IA ADMIN</a>
-            <h3>GOTO SUPPORT PAGE</h3>
-            <a href="https://help.gotoassist.com/" target="_blank">G2A SUPPORT SITE</a>
+            <div class="box">
+                <p><strong>G2A V5 ADMIN CENTER</strong></p>
+                <a href="https://admin.logmeininc.com"" target="_blank">ADMIN CENTER</a>
+             </div>
+             <div class="box">
+                <p><strong>G2A V5 WEB CONSOLE</strong></p>
+                <a href="https://console.gotoassist.com/" target="_blank">G2A V5 WEB CONSOLE</a>
+             </div>
+             <div class="box">
+                <p><strong>G2A V5 WEB SUPPORT CUSTOMER SITE</strong></p>
+                <a href="https://fastsupport.gotoassist.com/" target="_blank">FAST SUPPORT</a>
+             </div>
+             <div class="box">
+                <p><strong>INTERNAL ADMIN</strong></p>
+                <a href="https://adminsvc.commerce.expertcity.com/transactionSearch.htm" target="_blank" rel="none">INTERNAL ADMIN</a>
+             </div>
+             <div class="box">
+                <p><strong>G2A V5   SUPPORT PAGE </strong></p>
+                <a href="https://help.gotoassist.com/remote-support" target="_blank">G2A V5 SUPPORT SITE</a>
+             </div>
+             <div class="box">
+                <p><strong>G2A V5   STATUS PAGE </strong></p>
+                <a href="https://status.logmeinremotesupport.com/" target="_blank">G2A V5 STATUS SITE</a>
+             </div>
        </section>
     </details>
-
     <hr>
+    <br>
     <details>
         <summary>SERVICE DESK</summary>
         <section>
-            <h3>ADMIN CENTER</h3>
-            <a href="https://admin.logmeininc.com" target="_blank">ADMIN CENTER</a>
-            <h3>SERVICE DESK SITE</h3>
-            <a href="https://desk.gotoassist.com/recent_activity?user_id=2024345312211222757" target="_blank">SD WEBSITE</a>
-            <h3>INTERNAL ADMIN</h3>
-            <a href="https://adminsvc.commerce.expertcity.com/userSearch.htm?code=eyJraWQiOiI2MjAiLCJhbGciOiJSUzUxMiJ9.eyJzYyI6ImNvbGxhYjoiLCJzdWIiOiI2OTk0ODg0NDg3Nzk1MjMxMjI2IiwiYXVkIjoiMTllMzA4MDYtODAzZi00YTA2LWE4YjktZmFmM2IzMDQ1ODQzIiwib2duIjoic2FtbCIsImxzIjoiZTJjOWI5YzAtNmEyYy00YmY2LWJjYjYtOTNiYjgwYzgxYjhhIiwidHlwIjoiYyIsImV4cCI6MTY4ODM5MTE1MCwiaWF0IjoxNjg4MzkwNTUwLCJ1cmkiOiJodHRwczpcL1wvYWRtaW5zdmMuY29tbWVyY2UuZXhwZXJ0Y2l0eS5jb21cL3VzZXJTZWFyY2guaHRtIiwianRpIjoiNTM4M2JhZTctZjNjZC00OGYzLWE1MWUtMDVhY2Y4NTU0ZTU3In0.dKZO0lwYeQ8KVkoP9zpGuru6iGn9Fr8szNa3oPxq86MO11mgUJrEkDaqsU3fF1kWMDVRpq5UfPW2FVXH1b2uIQIRp17vfJdl_hOOLK3BtYrIb5kctC5jSNLYk4ZqCPdLBEIQwjOzyYuSi0UruK_FhFKcB1g-fWG6cykm34TI11ommBqjTvsZqa3kCid2wnrI5Edy8yhscclAiF2iXqV_q20CFwTYsaVWSkymy1u6xBKhj9vC1H959LYQH1Q22kRuJyolzM6J1r7SyIANs778bZ01F9xNQJLIZ6LzOWvRc4dfeTcZJ1bel4SOwn2YWYq2fSkrhsN_7bUJv09f1I9vIg" target="_blank" rel="none">IA ADMIN</a>
-       </section>
+             <div class="box">
+                <p><strong>ADMIN CENTER</strong></p>
+                <a href="https://admin.logmeininc.com"" target="_blank">ADMIN CENTER</a>
+             </div>
+             <div class="box">
+                <p><strong>SERVICE DESK CONSOLE SITE</strong></p>
+                <a href="https://desk.gotoassist.com/recent_activity?user_id=2024345312211222757" target="_blank">SD WEB CONSOLE</a>
+             </div>
+             <div class="box">
+                <p><strong>INTERNAL ADMIN</strong></p>
+                <a href="https://adminsvc.commerce.expertcity.com/transactionSearch.htm" target="_blank" rel="none">INTERNAL ADMIN</a>
+             </div>
+             <div class="box">
+                <p><strong>G2A SERVICES DESK SUPPORT SITE </strong></p>
+                <a href="https://support.logmeininc.com/gotoassist-service-desk" target="_blank" rel="none">SERV DESK SUPPORT SITE</a>
+             </div>
+             <div class="box">
+                <p><strong>STATUS SITE </strong></p>
+                <a href=" https://status.logmeinremotesupport.com/" target="_blank" rel="none">SERV DESK STATUS PAGE</a>
+             </div>
+     </section>
     </details>
     <hr>
+    <br>
     <details>
-        
+        <summary> G2A SEEIT  </summary>
+        <section>
+            <div class="box">
+                <p><strong>GOTO ASSIST SEEIT WEBSITE</strong></p>
+                <a href="https://seeit.gotoassist.com" target="_blank">seeit website</a>
+             </div>
+             <div class="box">
+                <p><strong>ADMIN CENTER</strong></p>
+                <a href="https://admin.logmeininc.com" target="_blank">Admin Center</a>
+             </div>
+             <div class="box">
+                <p><strong>G2A SEEIT SUPPORT SITE</strong></p>
+                <a href=" https://support.logmeininc.com/gotoassist-remote-support/help/gotoassist-seeit-overview" target="_blank">G2A SEEIT SUPPORT SITE</a>
+             </div>
+        </section>
     </details>
-    
+    <hr>
+    <br>
+    <details>
+        <summary>RESCUE LIVE GUIDE (CO-BROWSE)</summary>
+        <section>
+            <div class="box">
+                <p><strong>AGENT CONSOLE</strong></p>
+                <a href="https://console.logmeinrescue.com/" target="_blank"> AGENT CONSOLE</a>
+             </div>
+             <div class="box">
+                <p><strong>ADMIN CENTER CO-BROWSE</strong></p>
+                <a href="https://console.logmeinrescue.com/admin/Properties"> CO BROWSE ADMIN CENTER</a>
+             </div>
+             <div class="box">
+                <p><strong>CUSTOMER SUPPORT SITE</strong></p>
+                <a href="https://lmi.support.me" target="_blank">CUSTOMER  SUPPORT SITE</a>
+             </div>
+        </section>
+    </details>
+    <hr>
+    <br>
+    <details>
+        <summary>RESCUE LIVE LENS</summary>
+        <section>
+            <div class="box">
+                <p><strong>AGENT CONSOLE</strong></p>
+                <a href="https://console.logmeinrescue.com" target="_blank"> AGENT CONSOLE</a>
+             </div>
+             <div class="box">
+                <p><strong>CUSTOMER SUPPORT SITE</strong></p>
+                <a href="https://console.logmeinrescue.com/join" target="_blank">CUSTOMER SITE</a>
+             </div>
+        </section>
+    </details>
+    <hr>
+    <br>
+    <details>
+        <summary>LOGMEIN PRO</summary>
+        <section class="flex-container">
+            <div class="box">
+                <p><strong>SALESFORCE</strong></p>
+                <a href="https://lmi.lightning.force.com/" target="_blank">salesforce site</a>
+            </div>
+            <div class="box">
+                <p><strong>BACKOFFICE</strong></p>
+                <a href="https://backoffice.logmein.com/Portal.aspx" target="_blank">backoffice</a>
+            </div>
+            <div class="box">
+                <p><strong>LOGMEIN.COM</strong></p>
+                <a href="https://www.logmein.com/" target="_blank">logmein site</a>
+            </div>
+            <div class="box">
+                <p><strong>SUPPORT LOGMEIN SITE</strong></p>
+                <a href="https://support.logmeininc.com/pro" target="_blank">Logmein Support Site</a>
+            </div>
+            <div class="box">
+                <p><strong>LOGMEIN STATUS SITE</strong></p>
+                <a href="https://status.logmeinaccess.com/" target="_blank">Logmein Status Page</a>
+            </div>
+        </section>
+    </details>
+    <hr>
+    <br>
+    <details>
+        <summary>LOGMEIN CENTRAL</summary>
+        <section>
+            <div class="box">
+                <p><strong>SALESFORCE</strong></p>
+                <a href="https://lmi.lightning.force.com/" target="_blank">salesforce site</a>
+            </div>
+            <div class="box">
+                <p><strong>BACKOFFICE</strong></p>
+                <a href="https://backoffice.logmein.com/Portal.aspx" target="_blank">backoffice</a>
+            </div>
+            <div class="box">
+                <p><strong>CENTRAL SITE</strong></p>
+                <a href=" https://www.logmein.com/central" target="_blank">logmein central site</a>
+            </div>
+            <div class="box">
+                <p><strong>SUPPORT CENTRAL SITE</strong></p>
+                <a href=" https://support.logmeininc.com/central" target="_blank">Logmein Central  Support Site</a>
+            </div>
+            <div class="box">
+                <p><strong>LOGMEIN CENTRAL STATUS SITE</strong></p>
+                <a href=" https://status.logmeinaccess.com/" target="_blank">Logmein Central Status Page</a>
+            </div>
+        </section>
+    </details>
+    <hr>
+    <br>
+    <details>
+        <summary>HAMACHI</summary>
+        <section>
+            <div class="box">
+                <p><strong>SALESFORCE</strong></p> 
+                <a href="https://lmi.lightning.force.com/" target="_blank">salesforce site</a>
+            </div>
+            <div class="box">
+                <p><strong>BACKOFFICE</strong></p>
+                <a href="https://backoffice.logmein.com/Portal.aspx" target="_blank">backoffice</a>
+            </div>
+            <div class="box">
+                <p><strong>HAMACHI SITE</strong></p>
+                <a href="https://vpn.net/" target="_blank">Hamachi site</a>
+            </div>
+            <div class="box">
+                <p><strong>HAMACHI SUPPORT SITE</strong></p>
+                <a href="https://support.logmeininc.com/hamachi" target="_blank">Hamachi Support Site</a>
+            </div>
+            <div class="box">
+                <p><strong>HAMACHI STATUS SITE</strong></p>
+                <a href=" https://status.logmeinaccess.com/" target="_blank">Hamachi Status Site</a>
+            </div>
+        </section>
+    </details>
+    <hr>
+    <br>
+    <details>
+        <summary>GO TO MYPC</summary>
+        <section>
+            <div class="box">
+                <p><strong>GO TO MYPC INTERNAL ADMIN</strong></p> 
+                <a href=" https://admin.gotomypc.com/en_CA/admins/main.tmpl?Action=rgoto&_sf=2" target="_blank">G2P IA</a>
+            </div>
+            <div class="box">
+                <p><strong>G2P SITE</strong></p>
+                <a href="https://get.gotomypc.com/" target="_blank">G2P site</a>
+            </div>
+            <div class="box">
+                <p><strong>G2P SUPPORT  SITE</strong></p>
+                <a href="https://support.logmeininc.com/gotomypc" target="_blank">G2P Support site</a>
+            </div>
+            <div class="box">
+                <p><strong>HAMACHI STATUS SITE</strong></p>
+                <a href="https://status.logmeinaccess.com/" target="_blank">G2P Status Site</a>
+            </div>
+        </section>
+    </details>
+    <hr>
+    <br>
+    <details>
+        <summary>OTHER LINKS</summary>
+        <div class="box">
+            <p><strong>BOUNCE FILTER</strong></p>
+            <a href=" https://iam.servers.getgo.com/careapp/" target="_blank">Bounce Filter Tool</a>
+        </div>
+
+    </details>
 </body>
 </html>
